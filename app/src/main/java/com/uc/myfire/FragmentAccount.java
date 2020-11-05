@@ -48,7 +48,7 @@ public class FragmentAccount extends Fragment {
                     @Override
                     public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                         if (firebaseAuth.getCurrentUser() == null){
-                            Intent intent = new Intent(FragmentAccount.this.getActivity(),MainActivity.class);
+                            Intent intent = new Intent(com.uc.myfire.FragmentAccount.this.getActivity(),MainActivity.class);
                             startActivity(intent);
                         }
                         else {
